@@ -122,55 +122,21 @@ img {
   text-shadow: 0 2px 10px rgba(255, 255, 255, 0.8), 0 1px 3px rgba(0, 0, 0, 0.25);
 }
 
-.logo-bands {
+.logo-rings {
   position: absolute;
-  bottom: -0.55em;
+  bottom: -0.65em;
   left: 50%;
   transform: translateX(-50%);
-  width: 5.4em;
+  width: 5.2em;
   height: 1.5em;
+  background-image: url('images/logo-rings.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
   z-index: 0;
   pointer-events: none;
-}
-
-.band {
-  position: absolute;
-  top: 0;
-  width: 1.5em;
-  height: 1.5em;
-  border-radius: 50%;
-  border: 2px solid rgba(184, 134, 11, 0.85);
-  background: conic-gradient(
-    from 0deg,
-    #d4af37 0deg,
-    #fff6d5 30deg,
-    #d4af37 60deg,
-    #b8860b 120deg,
-    #fff 150deg,
-    #d4af37 180deg,
-    #b8860b 240deg,
-    #fff6d5 270deg,
-    #d4af37 300deg,
-    #d4af37 360deg
-  );
-  box-shadow:
-    0 0 6px rgba(212, 175, 55, 0.6),
-    inset 0 0 4px rgba(255, 255, 255, 0.5);
-  animation: band-shimmer 2.5s linear infinite;
-}
-
-.band-1 {
-  left: 0;
-}
-
-.band-2 {
-  right: 0;
-}
-
-@keyframes band-shimmer {
-  0% { filter: brightness(1) saturate(1); transform: rotate(0deg) scale(1); }
-  50% { filter: brightness(1.25) saturate(1.15); transform: rotate(180deg) scale(1.03); }
-  100% { filter: brightness(1) saturate(1); transform: rotate(360deg) scale(1); }
 }
 
 .logo:hover {

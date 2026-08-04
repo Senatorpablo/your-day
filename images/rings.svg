@@ -15,11 +15,19 @@
       <stop offset="80%" stop-color="#eac75e"/>
       <stop offset="100%" stop-color="#fff2c2"/>
     </linearGradient>
+
+    <linearGradient id="diamond" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#d6efff"/>
+      <stop offset="60%" stop-color="#a8d8ff"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+
     <filter id="ring-shadow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="2.5"/>
-      <feOffset dx="0" dy="3" result="offsetblur"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="0" dy="2.5" result="offsetblur"/>
       <feComponentTransfer>
-        <feFuncA type="linear" slope="0.35"/>
+        <feFuncA type="linear" slope="0.3"/>
       </feComponentTransfer>
       <feMerge>
         <feMergeNode/>
@@ -29,14 +37,34 @@
   </defs>
 
   <!-- Back ring (left) -->
-  <ellipse cx="82" cy="45" rx="38" ry="28" fill="none" stroke="url(#gold-band)" stroke-width="14" filter="url(#ring-shadow)"/>
+  <ellipse cx="82" cy="45" rx="38" ry="28" fill="none" stroke="url(#gold-band)" stroke-width="10" filter="url(#ring-shadow)"/>
   <!-- Inner edge highlight -->
-  <ellipse cx="82" cy="45" rx="31" ry="22" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
+  <ellipse cx="82" cy="45" rx="33" ry="24" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
   <!-- Outer shine -->
-  <path d="M 50 35 Q 82 12 114 35" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 52 36 Q 82 16 112 36" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2.5" stroke-linecap="round"/>
 
   <!-- Front ring (right), overlapping the back one -->
-  <ellipse cx="138" cy="45" rx="38" ry="28" fill="none" stroke="url(#gold-band-2)" stroke-width="14" filter="url(#ring-shadow)"/>
-  <ellipse cx="138" cy="45" rx="31" ry="22" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
-  <path d="M 106 35 Q 138 12 170 35" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2.5" stroke-linecap="round"/>
+  <ellipse cx="138" cy="45" rx="38" ry="28" fill="none" stroke="url(#gold-band-2)" stroke-width="10" filter="url(#ring-shadow)"/>
+  <ellipse cx="138" cy="45" rx="33" ry="24" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
+  <path d="M 108 36 Q 138 16 168 36" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Diamond setting on the front ring -->
+  <g transform="translate(138, 8)">
+    <!-- Prongs -->
+    <circle cx="-2.8" cy="6" r="1.4" fill="#b8860b"/>
+    <circle cx="2.8" cy="6" r="1.4" fill="#b8860b"/>
+    <circle cx="0" cy="8.2" r="1.4" fill="#b8860b"/>
+
+    <!-- Diamond -->
+    <path d="M -4 4 L 4 4 L 6 7 L 0 15 L -6 7 Z" fill="url(#diamond)" stroke="#8fbad4" stroke-width="0.5"/>
+
+    <!-- Facet lines -->
+    <line x1="0" y1="4" x2="0" y2="15" stroke="rgba(100,160,200,0.35)" stroke-width="0.6"/>
+    <line x1="-4" y1="4" x2="0" y2="15" stroke="rgba(100,160,200,0.35)" stroke-width="0.6"/>
+    <line x1="4" y1="4" x2="0" y2="15" stroke="rgba(100,160,200,0.35)" stroke-width="0.6"/>
+    <line x1="-4" y1="4" x2="4" y2="4" stroke="rgba(100,160,200,0.35)" stroke-width="0.6"/>
+
+    <!-- Sparkle -->
+    <path d="M 0 0 L 0 3 M -1.5 1.5 L 1.5 1.5" stroke="white" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+  </g>
 </svg>

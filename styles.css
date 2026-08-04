@@ -140,39 +140,8 @@ img {
   pointer-events: none;
 }
 
-.logo::before,
-.logo::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 3px solid var(--gold);
-  border-radius: 50%;
-  pointer-events: none;
-  transition: var(--transition);
-  z-index: 1;
-  box-shadow: 0 0 12px rgba(212, 175, 55, 0.4);
-}
-
-.logo::before {
-  width: 7.2em;
-  height: 3.2em;
-}
-
-.logo::after {
-  width: 8.8em;
-  height: 4.2em;
-}
-
 .logo:hover {
   color: var(--rose-dark);
-}
-
-.logo:hover::before,
-.logo:hover::after {
-  border-color: var(--rose-dark);
-  box-shadow: 0 0 16px rgba(154, 123, 26, 0.5);
 }
 
 .logo-text {

@@ -1,14 +1,14 @@
 :root {
-  --rose: #c67b7d;
-  --rose-light: #f5e6e6;
-  --rose-dark: #9a4e50;
+  --rose: #c5a028;
+  --rose-light: #fff8e1;
+  --rose-dark: #9a7b1a;
   --gold: #d4af37;
   --charcoal: #2c2c2c;
   --cream: #faf7f2;
   --white: #ffffff;
   --text: #4a4a4a;
   --text-light: #777777;
-  --shadow: 0 12px 32px rgba(44, 28, 28, 0.08);
+  --shadow: 0 12px 32px rgba(44, 35, 10, 0.08);
   --radius: 18px;
   --transition: all 0.25s ease;
 }
@@ -94,7 +94,7 @@ img {
   z-index: 1000;
   background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(198, 123, 125, 0.1);
+  border-bottom: 1px solid rgba(197, 160, 40, 0.12);
   padding: 18px 0;
   transition: var(--transition);
 }
@@ -381,12 +381,12 @@ img {
   padding: 38px 30px;
   box-shadow: var(--shadow);
   transition: var(--transition);
-  border: 1px solid rgba(198, 123, 125, 0.08);
+  border: 1px solid rgba(197, 160, 40, 0.1);
 }
 
 .category-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 44px rgba(44, 28, 28, 0.12);
+  box-shadow: 0 20px 44px rgba(44, 35, 10, 0.12);
 }
 
 .category-img {
@@ -429,7 +429,7 @@ img {
 
 .category-list li {
   padding: 8px 0;
-  border-bottom: 1px dashed rgba(198, 123, 125, 0.2);
+  border-bottom: 1px dashed rgba(197, 160, 40, 0.25);
   font-size: 0.95rem;
   color: var(--text);
 }
@@ -531,7 +531,7 @@ img {
   border-radius: var(--radius);
   padding: 34px;
   box-shadow: var(--shadow);
-  border-left: 4px solid var(--rose);
+  border-left: 4px solid var(--gold);
 }
 
 .testimonial p {
@@ -596,7 +596,7 @@ img {
 .form-row textarea {
   width: 100%;
   padding: 14px 16px;
-  border: 1px solid rgba(198, 123, 125, 0.25);
+  border: 1px solid rgba(197, 160, 40, 0.3);
   border-radius: 10px;
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
@@ -610,7 +610,7 @@ img {
 .form-row textarea:focus {
   outline: none;
   border-color: var(--rose);
-  box-shadow: 0 0 0 3px rgba(198, 123, 125, 0.1);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
 }
 
 .form-note {

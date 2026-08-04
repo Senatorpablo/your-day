@@ -125,14 +125,14 @@ img {
   bottom: -0.3em;
   left: 50%;
   transform: translateX(-50%);
-  width: 4em;
-  height: 1.6em;
-  background-image: url('images/user-rings.png?v=3');
+  width: 4.6em;
+  height: 1.9em;
+  background-image: url('images/user-rings-cropped.png?v=1');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   image-rendering: -webkit-optimize-contrast;
-  filter: contrast(1.08) saturate(1.05);
+  filter: contrast(1.15) saturate(1.08) brightness(1.03);
   z-index: 0;
   pointer-events: none;
 }

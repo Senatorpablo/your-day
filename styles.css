@@ -135,11 +135,11 @@ img {
 }
 
 .logo {
-  font-family: 'Sacramento', cursive;
-  font-size: 3.4rem;
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.6rem;
   font-weight: 400;
   color: var(--gold);
-  letter-spacing: 1px;
+  letter-spacing: 0;
   position: relative;
   display: inline-flex;
   align-items: center;

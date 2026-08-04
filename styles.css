@@ -124,33 +124,53 @@ img {
 
 .logo-bands {
   position: absolute;
-  top: 50%;
+  bottom: -0.55em;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 7.2em;
-  height: 3.6em;
+  transform: translateX(-50%);
+  width: 5.4em;
+  height: 1.5em;
   z-index: 0;
   pointer-events: none;
 }
 
 .band {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 3em;
-  height: 3em;
-  border: 3px solid var(--gold);
+  top: 0;
+  width: 1.5em;
+  height: 1.5em;
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(212, 175, 55, 0.35), inset 0 0 6px rgba(212, 175, 55, 0.15);
-  opacity: 0.9;
+  border: 2px solid rgba(184, 134, 11, 0.85);
+  background: conic-gradient(
+    from 0deg,
+    #d4af37 0deg,
+    #fff6d5 30deg,
+    #d4af37 60deg,
+    #b8860b 120deg,
+    #fff 150deg,
+    #d4af37 180deg,
+    #b8860b 240deg,
+    #fff6d5 270deg,
+    #d4af37 300deg,
+    #d4af37 360deg
+  );
+  box-shadow:
+    0 0 6px rgba(212, 175, 55, 0.6),
+    inset 0 0 4px rgba(255, 255, 255, 0.5);
+  animation: band-shimmer 2.5s linear infinite;
 }
 
 .band-1 {
-  transform: translate(-65%, -50%) rotate(-12deg);
+  left: 0;
 }
 
 .band-2 {
-  transform: translate(-35%, -50%) rotate(12deg);
+  right: 0;
+}
+
+@keyframes band-shimmer {
+  0% { filter: brightness(1) saturate(1); transform: rotate(0deg) scale(1); }
+  50% { filter: brightness(1.25) saturate(1.15); transform: rotate(180deg) scale(1.03); }
+  100% { filter: brightness(1) saturate(1); transform: rotate(360deg) scale(1); }
 }
 
 .logo:hover {

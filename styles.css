@@ -150,18 +150,18 @@ img {
 }
 
 .logo-text .heart {
-  font-size: 0.45em;
+  font-size: 0.42em;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 1.7em;
-  height: 1.7em;
-  border: 2.5px solid #1a1a1a;
+  width: 1.45em;
+  height: 1.45em;
+  border: 2px solid #1a1a1a;
   border-radius: 50%;
   line-height: 1;
   vertical-align: middle;
   margin: 0 0.06em;
-  padding-top: 0.05em;
+  padding-top: 0.04em;
 }
 
 .logo-rings {

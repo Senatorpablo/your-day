@@ -100,77 +100,31 @@ img {
   overflow: visible;
 }
 
-.fairy-lights {
+.navbar-banner {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none;
+  background-image: url('images/navbar-fairylights.png');
+  background-size: cover;
+  background-position: center 40%;
+  background-repeat: repeat-x;
   z-index: -1;
-  background: linear-gradient(180deg, rgba(255,245,220,0.28) 0%, rgba(255,235,245,0.22) 50%, rgba(235,250,255,0.28) 100%);
+  opacity: 0.95;
+  filter: saturate(1.2) brightness(1.05);
 }
 
-.fairy-lights::before {
+.navbar-banner::after {
   content: '';
   position: absolute;
-  top: 14px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent 0%, rgba(180,140,60,0.35) 10%, rgba(180,140,60,0.35) 90%, transparent 100%);
+  inset: 0;
+  background: linear-gradient(90deg, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0.15) 25%, rgba(255,255,255,0.15) 75%, rgba(255,255,255,0.55) 100%);
 }
 
+.fairy-lights,
+.fairy-lights::before,
 .light {
-  position: absolute;
-  top: 8px;
-  width: 14px;
-  height: 22px;
-  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-  box-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
-  opacity: 0.92;
-  animation: twinkle 2.5s ease-in-out infinite;
-}
-
-.light::before {
-  content: '';
-  position: absolute;
-  top: -6px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  height: 6px;
-  background: rgba(140, 110, 50, 0.5);
-  border-radius: 1px;
-}
-
-.light-1 { left: 2%; color: #ffd700; animation-delay: 0s; }
-.light-2 { left: 7%; color: #ff8da1; animation-delay: 0.3s; }
-.light-3 { left: 12%; color: #87ceeb; animation-delay: 0.6s; }
-.light-4 { left: 17%; color: #98fb98; animation-delay: 0.9s; }
-.light-5 { left: 22%; color: #dda0dd; animation-delay: 1.2s; }
-.light-6 { left: 27%; color: #ffd700; animation-delay: 1.5s; }
-.light-7 { left: 32%; color: #ff8da1; animation-delay: 0.2s; }
-.light-8 { left: 37%; color: #87ceeb; animation-delay: 0.5s; }
-.light-9 { left: 42%; color: #98fb98; animation-delay: 0.8s; }
-.light-10 { left: 47%; color: #dda0dd; animation-delay: 1.1s; }
-.light-11 { left: 52%; color: #ffd700; animation-delay: 1.4s; }
-.light-12 { left: 57%; color: #ff8da1; animation-delay: 0.1s; }
-.light-13 { left: 62%; color: #87ceeb; animation-delay: 0.4s; }
-.light-14 { left: 67%; color: #98fb98; animation-delay: 0.7s; }
-.light-15 { left: 72%; color: #dda0dd; animation-delay: 1.0s; }
-.light-16 { left: 77%; color: #ffd700; animation-delay: 1.3s; }
-.light-17 { left: 82%; color: #ff8da1; animation-delay: 1.6s; }
-.light-18 { left: 87%; color: #87ceeb; animation-delay: 0.25s; }
-.light-19 { left: 92%; color: #98fb98; animation-delay: 0.55s; }
-.light-20 { left: 97%; color: #dda0dd; animation-delay: 0.85s; }
-
-@keyframes twinkle {
-  0%, 100% { opacity: 0.8; transform: scale(1); filter: brightness(1); }
-  50% { opacity: 1; transform: scale(1.15); filter: brightness(1.3); }
-}
-
-.navbar-banner {
   display: none;
 }
 

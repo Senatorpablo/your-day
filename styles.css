@@ -124,12 +124,12 @@ img {
 
 .logo-rings {
   position: absolute;
-  bottom: -0.15em;
+  bottom: -0.2em;
   left: 50%;
   transform: translateX(-50%);
-  width: 4.6em;
-  height: 1.9em;
-  background-image: url('images/rings.svg?v=2');
+  width: 5em;
+  height: 1.7em;
+  background-image: url('images/user-rings.png?v=1');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

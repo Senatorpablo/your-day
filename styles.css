@@ -92,8 +92,7 @@ img {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(12px);
+  background: transparent;
   border-bottom: 1px solid rgba(197, 160, 40, 0.12);
   padding: 26px 0;
   transition: var(--transition);
@@ -110,8 +109,8 @@ img {
   background-size: cover;
   background-position: center 45%;
   background-repeat: repeat-x;
-  z-index: -1;
-  opacity: 0.85;
+  z-index: 0;
+  opacity: 0.9;
   filter: saturate(1.2) brightness(1.05);
 }
 
@@ -119,7 +118,15 @@ img {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.15) 25%, rgba(255,255,255,0.15) 75%, rgba(255,255,255,0.45) 100%);
+  background: linear-gradient(90deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.10) 25%, rgba(255,255,255,0.10) 75%, rgba(255,255,255,0.35) 100%);
+}
+
+.nav-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .fairy-lights,

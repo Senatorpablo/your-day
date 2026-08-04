@@ -1,0 +1,42 @@
+<svg viewBox="0 0 220 90" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gold-band" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff2c2"/>
+      <stop offset="20%" stop-color="#eac75e"/>
+      <stop offset="45%" stop-color="#b8860b"/>
+      <stop offset="65%" stop-color="#d4af37"/>
+      <stop offset="85%" stop-color="#fff2c2"/>
+      <stop offset="100%" stop-color="#b8860b"/>
+    </linearGradient>
+    <linearGradient id="gold-band-2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff2c2"/>
+      <stop offset="30%" stop-color="#d4af37"/>
+      <stop offset="55%" stop-color="#b8860b"/>
+      <stop offset="80%" stop-color="#eac75e"/>
+      <stop offset="100%" stop-color="#fff2c2"/>
+    </linearGradient>
+    <filter id="ring-shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.5"/>
+      <feOffset dx="0" dy="3" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.35"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Back ring (left) -->
+  <ellipse cx="82" cy="45" rx="38" ry="28" fill="none" stroke="url(#gold-band)" stroke-width="14" filter="url(#ring-shadow)"/>
+  <!-- Inner edge highlight -->
+  <ellipse cx="82" cy="45" rx="31" ry="22" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
+  <!-- Outer shine -->
+  <path d="M 50 35 Q 82 12 114 35" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Front ring (right), overlapping the back one -->
+  <ellipse cx="138" cy="45" rx="38" ry="28" fill="none" stroke="url(#gold-band-2)" stroke-width="14" filter="url(#ring-shadow)"/>
+  <ellipse cx="138" cy="45" rx="31" ry="22" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
+  <path d="M 106 35 Q 138 12 170 35" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

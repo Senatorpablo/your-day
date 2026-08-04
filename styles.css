@@ -107,14 +107,55 @@ img {
 
 .logo {
   font-family: 'Playfair Display', serif;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
-  color: var(--charcoal);
+  color: var(--gold);
   letter-spacing: 2px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em 0.8em;
+  min-width: 6.5em;
+  min-height: 2.6em;
+  transition: var(--transition);
+}
+
+.logo::before,
+.logo::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  pointer-events: none;
+  transition: var(--transition);
+}
+
+.logo::before {
+  width: 6em;
+  height: 2.6em;
+}
+
+.logo::after {
+  width: 7.4em;
+  height: 3.4em;
 }
 
 .logo:hover {
-  color: var(--rose);
+  color: var(--rose-dark);
+}
+
+.logo:hover::before,
+.logo:hover::after {
+  border-color: var(--rose-dark);
+}
+
+.logo-text {
+  position: relative;
+  z-index: 1;
 }
 
 .nav-links {

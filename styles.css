@@ -135,11 +135,11 @@ img {
 }
 
 .logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.9rem;
-  font-weight: 700;
+  font-family: 'Sacramento', cursive;
+  font-size: 3.4rem;
+  font-weight: 400;
   color: var(--gold);
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   position: relative;
   display: inline-flex;
   align-items: center;
